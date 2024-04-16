@@ -1,77 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    .header1{
+      color:blue;
+    }
+    .trb {
+      color: #bb00ff;
+    }
+  </style>
   <title>Temporal Navigation</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 
- <h1 style="color: blue; font-family: 'Roboto' , sans-serif;">Temporal Navigation</h1>
+ <h1 class="header1">Temporal Navigation</h1>
   <hr>
 </head>
   
-<body style="background-color: rgb(255, 255, 255);">
-  <h4 style="color: red; font-family: 'Roboto' , sans-serif;">
+<body id="container" style="background-color: black; font-family: 'roboto' , sans-serif;" class="trb">
+  <h4>
 <p>This is my study on Temporal Navigation</p>
 </h4>
   
-  <h4 style="color: rgb(0, 0, 0); font-family: 'Roboto' , sans-serif;">
+  <h4>
     <p>
-      using Albert Einstein's equation <span style="color: red;">(E=mc2)</span> Einstein realized that time was not constant.. However, time travel is currently not accessible due to the lack of materials meaning it cannot be put into practice... Moreover, to go back in time to the past this is just possible but extremely hard and resource hogging. However, contrary to back in time, we could go forward.
-      This theory states that time and space is linked .Therefore the existence of lightyears.
+      using albert Einstein's equation (E=mc2) Einstein realized that time was not constant.. However, time travel is currently not accessible due to the lack of materials meaning it cannot be put into practice... Moreover, to go back in time to the past this is just possible but extremely hard and resource hogging. However, contrary to back in time, we could go forward.
+      This theory states that time and space is linked. Therefore the existence of lightyears.
      <p> However, to project one's sub-conscience back in time is to stay back in time and not be able to come back.. unless there is a failsafe.. which means time travel maybe did exist previously but no one could live to tell the tale because they were stuck in the past.
       but if 1 mistake or something changes during the trip to the past.. it could alter the reality of the present... or.. it could absolutely create another timeline.
       for example.
       if I go back in time, to the point BEFORE where the apple fell on newton's head and I told him to get up to do something.. then according to the laws of newton.... our understanding of gravity wouldn't even be a concept to us.</p>
-
+<p>
       Creating a device to project one's subconscious into the future involves speculative and theoretical concepts, as there's no established scientific method for achieving such an endeavor. However, if we're to explore this concept imaginatively, here's a hypothetical approach:
     </p>
     <p>
-           <h1 style="color: blue; font-family: 'Roboto' , sans-serif;">
+           <h1>
              Conceptual Framework:
            </h1>
              </p>
-             <a href="https://icebearisawbear.github.io/TemporalNavigationResearch2/">
-            <button><h3> click to view more </h3></button>
+             <a href="https://icebearisawbear.github.io/TemporalNavigationResearch2/" target="_blank">
+             <h3 class="button"> click to view more </h3>
          </a>
     <hr>
     <p>
-    <h1 style="color: blue; font-family: 'Roboto' , sans-serif;">
+    <h1>
      Challenges and Considerations:
       </h1>
      
     </p>
     
-    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch3/">
-      <button><h3> click to view more</h3></button>
+    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch3/" target="_blank">
+      <h3 class="button"> click to view more</h3>
     </a>
     <hr>
 <p>
-  <h1 style="color: blue; font-family: 'Roboto' , sans-serif;">
+  <h1>
     Challenges and Considerations Part 2:
   </h1>
 </p>
-    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch4/">
-      <button><h3>click to view more</h3></button>
+    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch4/" target="_blank">
+      <h3 class="button">click to view more</h3>
     </a>
     <hr>
 <p>
-        <h1 style="color: blue; font-family: 'Roboto' , sans-serif;">
+        <h1>
           Key Characteristics of Timelines:
         </h1>
 </p>
-    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch5/">
-    <button><h3>click to view more</h3></button>
+    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch5/" target="_blank">
+    <h3 class="button">click to view more</h3>
     </a>
     <hr>
 
-    <h1 style="color: blue; font-family: 'Roboto' , sans-serif;">
+    <h1>
       The Concept Of Timelines
     </h1>
 
-    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch6/">
-      <button><h3>
+    <a href="https://icebearisawbear.github.io/TemporalNavigationResearch6/" target="_blank">
+      <h3 class="button">
         click to view more
-      </h3></button>
+      </h3>
       <hr>
     </a>
-    
+    <script>
+        (function() {
+            document.addEventListener("mousemove", parallax);
+            const elem = document.querySelector("#container");
+
+            function parallax(e) {
+                let _w = window.innerWidth/2;
+                let _h = window.innerHeight/2;
+                let _mouseX = e.clientX;
+                let _mouseY = e.clientY;
+                let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+                let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+                let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+                elem.style.backgroundPosition = x;
+            }
+        })();
+    </script>
     </body>
 </html>
